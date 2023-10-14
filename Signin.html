@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Signin</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Login Page">
+        <link rel="stylesheet" href="signin.css" />
+        <style>
+            body{
+                background-image:url('back.jpeg');
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("bt")
+
+
+            function register() {
+                x.style.left = "-450px";
+                y.style.left = "-0px";
+                z.style.left = "110px"
+            }
+            function login() {
+                x.style.left = "0px";
+                y.style.left = "450px";
+                z.style.left = "0px"
+            }
+
+            function validate() {
+                var valid = true;
+                if (document._regist.name.value == "") {
+                    alert("Username Is Empty");
+                    document._regist.name.focus();
+                    valid = false
+                }
+                if (document._regist.mail.value == "") {
+                    alert("E-mail Is Empty");
+                    document._regist.mail.focus();
+                    valid = false;
+                }
+                else {
+                    if (document._regist.mail.value.indexOf("@") == -1 || document._regist.mail.value.indexOf(".") == -1) {
+                        alert("Please Enter Valid E-mail like: (company@yahoo.com)");
+                        document._regist.mail.focus();
+                        valid = false;
+
+                    }
+
+                }
+                return valid;
+            }
+            function log() {
+                if (document.aaa.a.value == "Admin" && document.aaa.b.value == "1234") {
+                    window.location.href = "admin.html"
+                }
+                else {
+                    window.location.href = "home.html"
+                }
+            }
+            /*
+            if (document.aaa.text.value == "Admin" && document.aaa.password.value == "1234") {
+                alert("ss");
+
+
+            }
+            else {
+                alert("sss");
+            }
+}
+          /*if(document._regist.pwd1.value=="")
+          {
+              alert("Password Is Empty");
+              document._regist.pwd1.focus();
+              valid=false;
+          }
+          else
+          {
+              var regex=/?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+              if(regex.test(document._regist.pwd1) === false)
+              {
+                  alert("Invalid Password");
+                  document._regist.pwd1.focus();
+                  valid=false;
+              }
+          } function()
+          if(document._regist.pwd2.value=="")
+          {
+              alert("Password Is Empty");
+              document._regist.pwd2.focus();
+              valid=false;
+          }
+          else
+          {
+              if(document._regist.pwd2.value!=document._regist.pwd1.value)
+              alert("Passwords Are Not The Same");
+              document._regist.pwd2.focus();
+              valid=false;
+          }*/
+
+
+
+        </script>
+        <div class="bg">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="bt"></div>
+                    <button type="button" class="btn" onclick="login()">Log In</button>
+                    <button type="button" class="btn" onclick="register()">Register</button>
+                </div>
+                <div class="icons">
+                    <img src="facebook.jpeg">
+                    <img src="twetter.jpeg">
+                    <img src="insta.jpeg">
+                </div>
+                <form id="Login" class="input-boxes" method="POST" name="aaa">
+                    <label for="user" class="label">Username</label>
+                    <input type="text" name="a" class="input-text" placeholder="   Username" required>
+                    <label for="pass" class="label">Password</label>
+                    <input type="password" name="b" class="input-text" placeholder="   Password" required>
+                    <input type="checkbox" class="checkbox"> <span>Remember Me</span>
+                    <input type="button" class="sub-button1" value="LOG IN" onclick="log()" />
+                    <div class="hr"></div>
+                    <div class="foot">
+                        <a href="forget.html" target="_blank">Forget Password</a>
+                    </div>
+
+                </form>
+
+                <form name="_regist" method="post" id="register" onsubmit="return validate()" class="input-boxes" action="home.html">
+                    <label for="user" class="label">Username</label><br />
+                    <input name="name" type="text" class="input-text" placeholder="Username" required><br />
+                    <label for="email" class="label">E-mail</label><br />
+                    <input name="mail" type="text" class="input-text" placeholder="E-mail" required><br />
+                    <label for="pass" class="label">Password</label><br />
+                    <input type="password" name="pwd1" class="input-text" placeholder="Password" required><br />
+
+                    <input type="checkbox" class="checkbox" required> <span>I Agree To The Terms & Privacy Conditions</span><br />
+                    <input type="submit" class="sub-button1" value="REGISTER">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <b>Copy Right&copy; 2020. All Rights reserved to Team &reg;</b>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,168 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.bg
+{
+    height: 100%;
+    width: 100%;
+    background-image: url("background.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    height: 480px;
+    box-sizing: border-box;
+    background: rgba(233, 115, 154, 0.959);
+    padding: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px  rgba(203, 7, 89, 0.4);
+    border-radius: 30px;
+}
+.btn 
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color:white;
+    font-weight: bold;
+    font-family: cursive;
+}
+#bt 
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:  rgb(218, 15, 99);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.icons
+{
+    margin: 30px auto;
+    text-align: center;
+}
+.icons img
+{
+    width: 30px;
+    margin: 0 12px;
+    border-radius: 70%;
+    cursor: pointer;
+}
+.label
+{
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 35%;
+}
+.labell
+{
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 25%;
+}
+.input-boxes
+{
+    position: relative;
+    width: 220px;
+    transition: 0.5s;
+    margin: 35px auto;
+   border: none;
+}
+.input-text
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 20%;
+    border: black;
+    outline: none;
+    font-family: cursive;
+}
+span
+{
+    color:rgb(218, 15, 99);
+    font-weight: bold;
+    font-family: cursive;
+    margin: auto;
+}
+.sub-button
+{
+   width: 110px;
+   height: 100%;
+   color: white;
+   background-color:  rgb(218, 15, 99);
+   border-radius: 30px;
+   margin-top: 20px;
+   margin-left: 25%;
+   padding: 5px;
+   border: none;
+   font-family: cursive;
+   font-weight: bold;
+}
+.sub-button1
+{
+   width: 110px;
+   height: 100%;
+   color: white;
+   background-color:  rgb(218, 15, 99);
+   border-radius: 30px;
+   margin-top: 10px;
+   margin-left: 25%;
+   padding: 8px;
+   border: none;
+   font-family: cursive;
+   font-weight: bold;
+}
+.foot
+{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    margin-top: 15px;
+}
+a
+{
+    color: rgb(218, 15, 99);
+    font-weight: bold;
+}
+#register
+{
+    bottom: 300px;
+    left: 300px;
+}
+.footer
+{
+    text-align: center;
+    color:rgb(218, 15, 99);
+    padding: 10px 0;
+    position:fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 30px;
+}
